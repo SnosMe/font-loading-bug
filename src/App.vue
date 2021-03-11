@@ -1,6 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <div class="text-content">Cool font</div>
 </template>
 
 <script>
@@ -15,6 +16,17 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: 'Exo2';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./assets/Exo2-Regular.ttf') format("truetype");
+}
+
+.text-content {
+  font-family: 'Exo2';
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
